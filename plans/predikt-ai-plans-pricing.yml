@@ -1,0 +1,52 @@
+aid: predikt-ai
+name: PREDIK Data-Driven
+type: Plans
+url: https://predikdata.com/location-intelligence-solutions/
+accessModel: contact-sales
+selfServe: false
+freeTier: false
+publicPricing: false
+summary: |
+  PREDIK Data-Driven does not publish self-serve or list-priced API plans. It is a
+  data-licensing / contact-sales provider - datasets and their delivery APIs are
+  scoped, quoted, and licensed per engagement based on geography, dataset, variable
+  set, history depth, refresh cadence, and delivery method. Custom pricing,
+  subscription fees, and quotes are obtained directly from PREDIK or through the
+  Datarade marketplace. The offering is positioned for mid-market and enterprise
+  buyers.
+deliveryMethods:
+- REST API
+- SOAP API
+- Feed API
+- S3 Bucket
+deliveryFormats:
+- JSON
+- CSV
+- SQL
+datasetFamilies:
+- POI (Point-of-Interest) data
+- Aggregated foot-traffic data
+- Mobile location / human mobility data (anonymized device signals)
+- Company & commercial-area intelligence
+- Socio-demographic enrichment
+- Site-selection & demand-forecasting datasets
+coverageNotes: |
+  Coverage advertised up to 96 countries for the enriched mobile-location dataset
+  (~5M records/devices, ~4 years of history, ESG-compliant sourcing). Regional
+  POI + foot-traffic products carry 100-200+ variables per market and are divided
+  into geohash-7 (~150x150 m) cells. Aggregated foot-traffic products list ~12
+  countries (e.g. USA, Mexico, Colombia, Ecuador, Dominican Republic).
+howToBuy:
+- channel: Direct
+  url: https://predikdata.com/
+  note: Contact PREDIK sales for custom datasets, delivery method, and quote.
+- channel: Datarade
+  url: https://datarade.ai/data-providers/centralamericadata/profile
+  note: Request samples and custom pricing through the Datarade marketplace listing.
+sources:
+- url: https://predikdata.com/location-intelligence-solutions/
+  note: PREDIK location-intelligence solutions overview.
+- url: https://datarade.ai/data-products/predik-data-driven-location-intelligence-datasets-predik-data-driven
+  note: Enriched mobile-location dataset - 96 countries, 5M records, 4 years history, ESG compliance.
+- url: https://datarade.ai/data-providers/centralamericadata/profile
+  note: PREDIK Datarade provider profile - contact-sales/custom pricing, delivery via SOAP/REST/Feed API and S3.

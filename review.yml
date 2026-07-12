@@ -1,0 +1,88 @@
+aid: predikt-ai
+name: PREDIK Data-Driven
+review:
+  question: Does PREDIK Data-Driven expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-11'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. PREDIK Data-Driven is a data-licensing /
+    contact-sales provider, not a self-serve API platform. It advertises REST API,
+    SOAP API, and Feed API (plus S3-bucket) as ways to deliver licensed datasets,
+    but publishes no developer portal, base URL, authentication scheme, or endpoint
+    reference. There is no public request/response API surface to model, and no
+    server-push transport (WebSocket or SSE) of any kind is documented. There is
+    nothing to describe in an AsyncAPI document.
+findings:
+  summary: |
+    PREDIK Data-Driven does not publish a documented public WebSocket API - nor any
+    documented public self-serve API of any protocol. PREDIK (predikdata.com,
+    founded 2008, Coral Gables, Florida) is a big-data analytics and
+    location-intelligence research firm. It sells enriched geospatial datasets -
+    Point-of-Interest (POI) data, aggregated foot-traffic and human-mobility data
+    from anonymized mobile devices, company and commercial-area intelligence, and
+    socio-demographic enrichment - for site selection, demand forecasting, and
+    web/reference intelligence. Access is by data licensing and delivered as managed
+    feeds. PREDIK and its Datarade marketplace listing name REST API, SOAP API,
+    Feed API, and S3 bucket as delivery channels, with JSON/CSV/SQL output, but no
+    public API reference, base URL, or auth documentation is published. Pricing is
+    contact-sales/custom-quote only. No WebSocket (ws:// or wss://) endpoint is
+    documented anywhere.
+  accessModel: |
+    Gated data provider. Contact-sales / data-licensing model with no self-serve
+    developer signup, no public API keys, and no published endpoints. Datasets and
+    their delivery APIs are scoped, quoted, and provisioned per engagement.
+    Endpoints are NOT modeled here (endpointsModeled=false) because no public API
+    documentation exists to ground them; fabricating a surface would be dishonest.
+  transports:
+  - protocol: REST
+    scheme: https
+    documented: false
+    note: PREDIK lists a REST API as a data-delivery channel, but no base URL, endpoints, or auth are published.
+  - protocol: SOAP
+    scheme: https
+    documented: false
+    note: SOAP API listed as a delivery channel (XML). No public WSDL or endpoint reference.
+  - protocol: Feed API
+    scheme: https
+    documented: false
+    note: Managed data feed delivery. No public feed URL or schema published.
+  - protocol: S3 Bucket
+    scheme: https
+    documented: false
+    note: Bulk dataset delivery to/from an S3 bucket. Provisioned per engagement, not a public API.
+  - protocol: WebSocket
+    scheme: wss
+    documented: false
+    note: No WebSocket endpoint is documented anywhere for PREDIK Data-Driven as of the review date.
+  endpointsModeled: false
+  endpointsConfirmedRest: []
+sources:
+- url: https://predikdata.com/
+  type: Website
+  note: PREDIK Data-Driven corporate site - big-data analytics / location intelligence firm.
+- url: https://predikdata.com/location-intelligence-solutions/
+  type: Documentation
+  note: Location-intelligence solutions overview (visit trends, foot-traffic benchmarking, site selection).
+- url: https://predikdata.com/about-us/
+  type: About
+  note: Founded 2008; research firm serving US, Latin America, Europe and other regions.
+- url: https://datarade.ai/data-providers/centralamericadata/profile
+  type: Listing
+  note: Datarade provider profile - contact-sales/custom pricing; delivery via SOAP/REST/Feed API and S3; JSON/CSV/SQL.
+- url: https://datarade.ai/data-products/predik-data-driven-location-intelligence-datasets-predik-data-driven
+  type: Listing
+  note: Enriched mobile-location dataset - 96 countries, ~5M records, ~4 years history, ESG compliance.
+- url: https://datarade.ai/data-products/predik-data-driven-i-point-of-interest-poi-data-foot-traf-predik-data-driven-a3e5
+  type: Listing
+  note: POI + foot-traffic product with 200+ variables (Mexican market); geohash-7 (150x150m) cells.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket surface exists, and PREDIK exposes no documented public self-serve
+    API at all - it is a contact-sales data-licensing provider. No AsyncAPI or
+    OpenAPI document was created because there is no public, documented API surface
+    to model. The entry honestly records the delivery channels PREDIK advertises
+    (REST/SOAP/Feed API, S3) and marks endpoints as not modeled.
