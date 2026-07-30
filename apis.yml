@@ -15,7 +15,18 @@ description: PREDIK Data-Driven is a big-data analytics and location-intelligenc
   reference; access is arranged directly with PREDIK or through the Datarade
   marketplace. Endpoints are not publicly documented and are therefore not modeled
   here.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/predikt-ai.png
 tags:
 - Web Intelligence
 - Data Enrichment
