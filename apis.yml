@@ -43,7 +43,7 @@ tags:
 - Site Selection
 - Alternative Data
 created: '2026-07-11'
-modified: '2026-07-11'
+modified: '2026-08-14'
 specificationVersion: '0.19'
 apis:
 - aid: predikt-ai:predikt-ai-location-intelligence-data-api
@@ -57,6 +57,7 @@ apis:
   - Company Data
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://predikdata.com/location-intelligence-solutions/
+  baseURL: https://api.predikdata.com
   properties:
   - url: https://predikdata.com/location-intelligence-solutions/
     type: Documentation
@@ -66,11 +67,21 @@ apis:
     location-intelligence products - POI data, aggregated foot-traffic and mobility
     data, company and commercial-area intelligence, and socio-demographic enrichment.
     PREDIK lists REST API, SOAP API, and Feed API (alongside S3-bucket) as delivery
-    channels, with output in JSON, CSV, or SQL. No public developer portal, base
-    URL, authentication scheme, or endpoint reference is published; access, schema,
-    and coverage are negotiated per engagement. Endpoints are not modeled because no
-    public API documentation exists (endpointsModeled=false).
+    channels, with output in JSON, CSV, or SQL. Access, schema, and coverage are
+    negotiated per engagement. The API host itself was verified live on 2026-08-14
+    - https://api.predikdata.com is an AWS API Gateway custom domain on PREDIK's own
+    domain (TLS cert CN=*.predikdata.com issued by Amazon), and its /ping endpoint
+    returns HTTP 200 "Healthy Connection". Every other probed path returns the API
+    Gateway 403 {"message":"Missing Authentication Token"}, so the routes and the
+    contract are entirely credentialed. No public developer portal, API reference,
+    authentication documentation, or machine-readable specification is published
+    anywhere, and the provider's own llms.txt (a complete inventory of every page on
+    predikdata.com) lists no developer or documentation page at all. Endpoints are
+    therefore not modeled (endpointsModeled=false) - the host is real and reachable,
+    but nothing about its surface is publicly described.
 common:
+- type: DomainSecurity
+  url: security/predikt-ai-domain-security.yml
 - type: Website
   url: https://predikdata.com/
 - type: LinkedIn
@@ -81,6 +92,48 @@ common:
   url: https://datarade.ai/data-providers/centralamericadata/profile
 - type: Plans
   url: plans/predikt-ai-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/predikt-ai-rate-limits.yml
+- type: LLMsTxt
+  url: llms/predikt-ai-llms.txt
+- type: ContentSignal
+  url: well-known/predikt-ai-robots.txt
+- type: Blog
+  url: https://predikdata.com/blog/
+- type: Support
+  url: https://predikdata.com/contact/
+- type: TermsOfService
+  url: https://predikdata.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://predikdata.com/predik-data-driven-privacy-policy/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-08-14'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    PREDIK runs a real, live API - https://api.predikdata.com is an AWS API Gateway
+    on its own domain whose /ping endpoint answers HTTP 200 "Healthy Connection" -
+    but every other path returns 403 {"message":"Missing Authentication Token"}, and
+    the provider's own llms.txt, a complete inventory of all ~200 pages on
+    predikdata.com, lists no developer, documentation, API-reference or pricing page
+    at all, so the contract is reachable only after a "Request a Demo" sales
+    conversation.
+  evidence:
+  - url: https://api.predikdata.com/ping
+    status: 200
+  - url: https://api.predikdata.com/
+    status: 403
+  - url: https://predikdata.com/llms.txt
+    status: 200
+  - url: https://predikdata.com/.well-known/agent-card.json
+    status: 404
+  - url: https://predikdata.com/request_demo/
+    status: 403
+  checked: '2026-08-14'
