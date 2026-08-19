@@ -1,0 +1,46 @@
+generated: '2026-08-14'
+method: searched
+source: https://predikdata.com/llms.txt
+limit_count: 0
+summary: |
+  PREDIK publishes no rate limits. There is no developer portal, no API reference
+  and no terms-of-use page that states a request quota, burst allowance, or
+  throttling behaviour for its data-delivery APIs.
+
+  The provider's own llms.txt (fetched 2026-08-14, HTTP 200) is a complete
+  inventory of every page and post on predikdata.com — roughly 100 pages and 100
+  blog posts — and contains no developer, documentation, API-reference or pricing
+  page of any kind. There is therefore no published surface on which a rate limit
+  could be documented.
+
+  PREDIK's live API host (https://api.predikdata.com, AWS API Gateway) rejects
+  every request without credentials, so no rate-limit response headers could be
+  observed on an unauthenticated call either. Whether the API returns
+  X-RateLimit-* / RateLimit-* / Retry-After headers is unknown and cannot be
+  determined without an issued key.
+
+limits: []
+
+response_headers:
+  observed: []
+  note: >-
+    Not observable anonymously. Every authenticated-surface path on
+    api.predikdata.com returns HTTP 403 {"message":"Missing Authentication Token"}
+    with no rate-limit headers. The only anonymously reachable endpoint,
+    /ping (HTTP 200, body "Healthy Connection"), returns no rate-limit headers
+    either.
+
+exhaustion_status_code: null
+
+x-evidence:
+  fetched: '2026-08-14'
+  probes:
+  - url: https://predikdata.com/llms.txt
+    status: 200
+    note: Full site inventory; no developer/docs/pricing page listed.
+  - url: https://api.predikdata.com/
+    status: 403
+    note: No rate-limit headers on the gated response.
+  - url: https://api.predikdata.com/ping
+    status: 200
+    note: No rate-limit headers on the open health endpoint.

@@ -1,6 +1,10 @@
 aid: predikt-ai
 name: PREDIK Data-Driven
 type: Plans
+generated: '2026-08-14'
+method: searched
+source: https://predikdata.com/llms.txt
+plan_count: 0
 url: https://predikdata.com/location-intelligence-solutions/
 accessModel: contact-sales
 selfServe: false
@@ -14,6 +18,11 @@ summary: |
   subscription fees, and quotes are obtained directly from PREDIK or through the
   Datarade marketplace. The offering is positioned for mid-market and enterprise
   buyers.
+
+  Re-verified 2026-08-14: the provider's own llms.txt (HTTP 200) enumerates every
+  page on predikdata.com and lists no pricing, plans, or developer page. There are
+  zero published plans (plan_count: 0) — the only commercial entry points are the
+  contact and demo-request forms and the Datarade marketplace listing.
 deliveryMethods:
 - REST API
 - SOAP API
