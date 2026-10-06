@@ -54,7 +54,7 @@ tags:
 - Site Selection
 - Alternative Data
 created: '2026-07-11'
-modified: '2026-08-14'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: predikt-ai:predikt-ai-location-intelligence-data-api
@@ -91,6 +91,10 @@ apis:
     therefore not modeled (endpointsModeled=false) - the host is real and reachable,
     but nothing about its surface is publicly described.
 common:
+- url: https://predikdata.com/es/blog/
+  type: Blog
+- url: https://predikdata.com/es/feed/
+  type: BlogRSS
 - type: DomainSecurity
   url: security/predikt-ai-domain-security.yml
 - type: Website
