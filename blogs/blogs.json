@@ -1,0 +1,28 @@
+{
+  "repo": "predikt-ai",
+  "feeds": [
+    {
+      "source": "https://predikdata.com/es/blog/",
+      "feed_url": "https://predikdata.com/es/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://predikdata.com/blog/",
+      "feed_url": "https://predikdata.com/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://predikdata.com/es/feed/",
+      "feed_url": "https://predikdata.com/es/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-10-10T13:15:00Z"
+}
