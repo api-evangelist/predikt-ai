@@ -48,6 +48,21 @@ tags:
 - Location Intelligence
 - Geospatial
 - Foot Traffic
+- POI
+- Mobility Data
+- Demand Forecasting
+- Site Selection
+- Alternative Data
+tags_raw:
+- Web Intelligence
+- Data Enrichment
+- Company Data
+- B2B Data
+- Sales Intelligence
+- Reference Data
+- Location Intelligence
+- Geospatial
+- Foot Traffic
 - POI Data
 - Mobility Data
 - Demand Forecasting
@@ -60,6 +75,13 @@ apis:
 - aid: predikt-ai:predikt-ai-location-intelligence-data-api
   name: PREDIK Location Intelligence & Foot Traffic Data API
   tags:
+  - Location Intelligence
+  - Foot Traffic
+  - POI
+  - Data Enrichment
+  - Web Intelligence
+  - Company Data
+  tags_raw:
   - Location Intelligence
   - Foot Traffic
   - POI Data
