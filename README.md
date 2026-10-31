@@ -1,4 +1,4 @@
-# PREDIK Data-Driven (predikt-ai)
+# PREDIK Data-Driven
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,88 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PREDIK Data-Driven is a big-data analytics and location-intelligence research firm (founded 2008, Coral Gables, Florida) that builds enriched geospatial datasets for site selection, demand forecasting, and web/reference intelligence. Its products cover Point-of-Interest (POI) data, aggregated foot-traffic and human-mobility data derived from anonymized mobile devices, company and commercial-area intelligence, and socio-demographic enrichment — divided into geohash-7 (~150×150 m) cells with 100–200+ variables and coverage of up to 96 countries.
+PREDIK Data-Driven is a big-data analytics and location-intelligence research firm (founded 2008, Coral Gables, Florida) that builds enriched geospatial datasets for site selection, demand forecasting, and web/reference intelligence. Its products cover Point-of-Interest (POI) data, aggregated foot-traffic and human mobility data derived from anonymized mobile devices, company and commercial-area intelligence, and socio-demographic enrichment - divided into geohash-7 (150x150m) cells with 100-200+ variables and coverage of up to 96 countries. PREDIK is a data-delivery / contact-sales provider - datasets are licensed and delivered as managed feeds via REST API, SOAP API, Feed API, or S3 bucket in JSON, CSV, and SQL formats. There is no public self-serve developer API portal or published API reference; access is arranged directly with PREDIK or through the Datarade marketplace. Endpoints are not publicly documented and are therefore not modeled here.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/predikt-ai/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/predikt-ai/refs/heads/main/apis.yml)
+**Areas:** Web Intelligence · Data Enrichment · Company Data · B2B Data · Sales Intelligence · Reference Data · Location Intelligence · Geospatial · Foot Traffic · POI Data · Mobility Data · Demand Forecasting
 
-## Access Model — Gated / Data-Licensing (Important)
+## PREDIK Data-Driven on APIs.io
 
-PREDIK is **not** a self-serve API platform. It is a **data-licensing / contact-sales provider**. There is **no public developer portal, no published API reference, no base URL, and no documented authentication scheme**. Datasets are scoped, quoted, and delivered per engagement.
+Everything profiled for PREDIK Data-Driven is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/predikt-ai/](https://apis.io/providers/predikt-ai/)** — or go straight to one of the APIs or properties below.
 
-PREDIK advertises these **delivery channels**:
+### APIs (1)
 
-- REST API
-- SOAP API
-- Feed API
-- S3 Bucket
+- [PREDIK Location Intelligence & Foot Traffic Data API](https://apis.io/apis/predikt-ai/predikt-ai-location-intelligence-data-api/) — Partner-delivered, contact-sales data API that serves PREDIK's enriched location-intelligence products - POI data, aggregated foot-traffic and mobility…
 
-…with output in **JSON**, **CSV**, or **SQL**. Because none of these channels ship with public documentation, **endpoints are not modeled** in this entry (`endpointsModeled: false`) — no API surface has been fabricated. Access is arranged directly with PREDIK or through the [Datarade](https://datarade.ai/data-providers/centralamericadata/profile) marketplace.
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Web Intelligence
-- Data Enrichment
-- Company Data
-- B2B Data
-- Sales Intelligence
-- Reference Data
-- Location Intelligence
-- Geospatial
-- Foot Traffic
-- POI Data
-- Mobility Data
-- Demand Forecasting
-- Site Selection
-- Alternative Data
+#### Security (1)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-07-11
-- **Modified:** 2026-07-11
+- [Predikt Ai Domain Security](https://apis.io/security/predikt-ai/predikt-ai-domain-security/)
 
-## APIs
+#### Plans and pricing (1)
 
-### PREDIK Location Intelligence & Foot Traffic Data API
+Published plans, tiers and prices.
 
-Partner-delivered, contact-sales data API that serves PREDIK's enriched location-intelligence products — POI data, aggregated foot-traffic and mobility data, company and commercial-area intelligence, and socio-demographic enrichment. PREDIK lists REST API, SOAP API, and Feed API (alongside S3-bucket) as delivery channels, with output in JSON, CSV, or SQL. No public developer portal, base URL, authentication scheme, or endpoint reference is published; access, schema, and coverage are negotiated per engagement.
+- [Predikt Ai Plans Pricing](https://apis.io/plans/predikt-ai/predikt-ai-plans-pricing/)
 
-- **Human URL:** [https://predikdata.com/location-intelligence-solutions/](https://predikdata.com/location-intelligence-solutions/)
+#### Rate limits (1)
 
-#### Tags
+Published request limits.
 
-- Location Intelligence
-- Foot Traffic
-- POI Data
-- Data Enrichment
-- Web Intelligence
-- Company Data
+- [Predikt Ai Rate Limits](https://apis.io/rate-limits/predikt-ai/predikt-ai-rate-limits/)
 
-#### Properties
+## Where to find this API
 
-- [Documentation](https://predikdata.com/location-intelligence-solutions/)
-- [Listing](https://datarade.ai/data-providers/centralamericadata/profile)
-
-## Datasets
-
-- **POI (Point-of-Interest) data** — commercial, business, and industrial points with 100–200+ variables per market.
-- **Aggregated foot-traffic data** — visitation and mobility density statewide/countrywide (~12 countries incl. USA, Mexico, Colombia, Ecuador, Dominican Republic).
-- **Mobile location / human-mobility data** — anonymized device signals; enriched dataset up to 96 countries, ~5M records, ~4 years of history, ESG-compliant sourcing.
-- **Company & commercial-area intelligence** — trade-area, risk, and site-selection insights.
-- **Socio-demographic enrichment** — audience characteristics and behavior tied to geohash-7 (~150×150 m) cells.
-
-## Pricing
-
-Contact-sales / custom-quote only — no self-serve or list pricing. See [`plans/predikt-ai-plans-pricing.yml`](plans/predikt-ai-plans-pricing.yml). Request datasets, samples, and quotes directly from PREDIK or via the Datarade marketplace.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://predikdata.com/)
-- [LinkedIn](https://www.linkedin.com/showcase/predik-data-driven-us/)
 - [Documentation](https://predikdata.com/location-intelligence-solutions/)
-- [Listing](https://datarade.ai/data-providers/centralamericadata/profile)
-- [Plans](plans/predikt-ai-plans-pricing.yml)
+- [Support](https://predikdata.com/contact/)
+- [Blog](https://predikdata.com/es/blog/)
+- [Terms of service](https://predikdata.com/terms-of-service/)
+- [Privacy policy](https://predikdata.com/predik-data-driven-privacy-policy/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 14.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 21.1 |
+
+**Agent readiness 4.7** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | yes |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/predikt-ai/](https://apis.io/providers/predikt-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PREDIK Data-Driven: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/predikt-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
